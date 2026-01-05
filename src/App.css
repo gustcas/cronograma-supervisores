@@ -1,0 +1,32 @@
+/* Variables CSS para colores consistentes */
+:root {
+  --color-subida: #0d6efd; /* Azul Bootstrap */
+  --color-induccion: #ffc107; /* Amarillo */
+  --color-perforacion: #198754; /* Verde */
+  --color-bajada: #dc3545; /* Rojo */
+  --color-descanso: #6c757d; /* Gris */
+  --color-error: #dc3545;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.estado {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.estado.S { background-color: var(--color-subida); color: white; }
+.estado.I { background-color: var(--color-induccion); color: #000; }
+.estado.P { background-color: var(--color-perforacion); color: white; }
+.estado.B { background-color: var(--color-bajada); color: white; }
+.estado.D { background-color: var(--color-descanso); color: white; }
+
+.estado:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
